@@ -7,7 +7,7 @@ Flutter/Dart developers, rejoice! If you've ever felt like your Dart code could 
 ### Benefits:
 - **Performance**: `const` objects are compile-time constants, which means they’re optimized at build time. Your app will thank you for the speed boost.
 - **Cleaner Code**: Fewer manual changes mean a cleaner codebase and less chance of missing crucial optimizations.
-- **Less Stress**: No more worrying about those pesky warnings — we’ve got you covered!
+- **Less Stress**: No more worrying about those irritatating warnings — we’ve got you covered!
 
 ## 🛠️ Features
 
@@ -20,7 +20,7 @@ Flutter/Dart developers, rejoice! If you've ever felt like your Dart code could 
 ### 1. **Install the Extension**
 
 1. **Open VS Code**.
-2. **Go to Extensions** (Ctrl+Shift+X or Cmd+Shift+X).
+2. **Go to Extensions** (`Ctrl+Shift+X` on Windows or `Cmd+Shift+X` on Mac).
 3. **Search for `Flutter Const Optimizer`**.
 4. **Click Install**.
 
@@ -28,7 +28,7 @@ Flutter/Dart developers, rejoice! If you've ever felt like your Dart code could 
 
 #### **Manual Optimization**
 
-1. **Open the Command Palette** (Ctrl+Shift+P or Cmd+Shift+P).
+1. **Open the Command Palette** (`Ctrl+Shift+P` on Windows or `Cmd+Shift+P` on Mac).
 2. **Type `Flutter Const Optimizer: Optimize Code`**.
 3. **Press Enter**.
 4. **Voila!** Your code will be optimized.
@@ -58,10 +58,10 @@ class MyClass {
 
 void myMethod() {
   MyClass();
-}```
+}
 
 After:
-```
+```dart
 class MyClass {
   const MyClass();
 }
@@ -69,11 +69,10 @@ class MyClass {
 void myMethod() {
   const MyClass();
 }
-```
 
 ## 💬 Feedback & Support
 
-- **Issues**: If you find any issues, please [create a GitHub issue](https://github.com/Prachi-Jamdade/Prachi-Jamdade/issues).
+- **Issues**: If you find any issues, please [create a GitHub issue](https://github.com/Prachi-Jamdade/flutter-const-optimizer-vsext/issues).
 - **Suggestions**: I’d love to hear your feedback and suggestions to improve the extension!
 
 ## 🤖 Contributing

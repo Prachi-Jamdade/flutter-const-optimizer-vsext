@@ -1,6 +1,7 @@
 {
   "name": "flutter-const-optimizer",
   "displayName": "Flutter Const Optimizer",
+  "publisher": "PrachiJamdade",
   "description": "Automatically adds the const keyword to Dart/Flutter constructors on save, improving code performance and efficiency.",
   "version": "0.0.1",
   "engines": {
@@ -9,7 +10,10 @@
   "categories": [
     "Other"
   ],
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Prachi-Jamdade/flutter-const-optimizer-vsext.git"
+  },
   "activationEvents": [
     "onLanguage:dart"
   ],
