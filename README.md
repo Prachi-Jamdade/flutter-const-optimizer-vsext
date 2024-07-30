@@ -80,7 +80,7 @@ void myMethod() {
 
 ## 🤖 Contributing
 
-Feel free to contribute to this project. Check out the [contributing guidelines](https://github.com/Prachi-Jamdade/Prachi-Jamdade/blob/main/CONTRIBUTING.md) and get started!
+Feel free to contribute to this project. Check out the [contributing guidelines](https://github.com/Prachi-Jamdade/flutter-const-optimizer-vsext/blob/main/CONTRIBUTING.md) and get started!
 
 ## 🕵️‍♂️ Fun Fact
 
