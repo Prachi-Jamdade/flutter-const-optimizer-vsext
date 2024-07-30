@@ -51,7 +51,7 @@ The extension will show a notification for each optimization applied. If you hav
 ## 🎨 Example
 
 Before:
-```dart
+```
 class MyClass {
   MyClass();
 }
@@ -59,9 +59,11 @@ class MyClass {
 void myMethod() {
   MyClass();
 }
+```
+
 
 After:
-```dart
+```
 class MyClass {
   const MyClass();
 }
@@ -69,6 +71,7 @@ class MyClass {
 void myMethod() {
   const MyClass();
 }
+```
 
 ## 💬 Feedback & Support
 
