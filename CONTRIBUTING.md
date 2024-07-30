@@ -39,8 +39,8 @@ To set up the development environment for the VS Code Dart Const Optimizer Exten
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Prachi-Jamdade/Prachi-Jamdade.git
-    cd Prachi-Jamdade
+    git clone https://github.com/Prachi-Jamdade/flutter-const-optimizer-vsext.git
+    cd flutter-const-optimizer-vsext
     ```
 
 2. **Install dependencies:**
