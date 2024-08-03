@@ -32,12 +32,8 @@ async function optimizeDartCode(): Promise<void> {
         const { message, range, severity } = diagnostic;
         if ( message.includes("Use 'const' with the constructor to improve performance")) {
             const text = document.getText(range);
-            vscode.window.showInformationMessage(`Original text: ${text}`);
-
             const newText = addConstKeyword(text);
-
-            vscode.window.showInformationMessage(`New text: ${newText}`);
-
+            
             if (newText !== text) {
                 edits.push(vscode.TextEdit.replace(range, newText));
             }
