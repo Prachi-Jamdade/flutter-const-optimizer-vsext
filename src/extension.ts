@@ -71,5 +71,5 @@ function addConstKeyword(text: string): string {
 }
 
 export function deactivate() {
-    // Clean-up logic if necessary
+    vscode.window.showInformationMessage('Flutter Const Optimizer extension deactivated.');
 }
