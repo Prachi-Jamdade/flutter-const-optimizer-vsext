@@ -4,9 +4,23 @@
   "publisher": "PrachiJamdade",
   "description": "Automatically adds the const keyword to Dart/Flutter constructors on save, improving code performance and efficiency.",
   "version": "0.0.3",
+  "icon": "images/ext_logo.png",
+  "galleryBanner": {
+		"color": "#5960a8",
+		"theme": "dark"
+	},
+  "license": "MIT",
   "engines": {
     "vscode": "^1.91.0"
   },
+  "keywords": [
+		"flutter",
+		"dart",
+		"const",
+		"andriod",
+		"ios",
+    "optimization"
+	],
   "categories": [
     "Other"
   ],
