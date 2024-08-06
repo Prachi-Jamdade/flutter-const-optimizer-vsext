@@ -13,6 +13,14 @@ export async function optimizeDartCode(): Promise<'optimized' | 'no_optimization
 
     diagnostics.forEach((diagnostic) => {
         const { message, range } = diagnostic;
+        if (message.includes("The constructor being called isn't a const constructor")) {
+            const text = document.getText(range);
+            const newText = removeConstKeyword(text);
+
+            if (newText !== text) {
+                edits.push(vscode.TextEdit.replace(range, newText));
+            }
+        }
         if (message.includes("Use 'const' with the constructor to improve performance")) {
             const text = document.getText(range);
             const newText = addConstKeyword(text);
@@ -44,3 +52,15 @@ function addConstKeyword(text: string): string {
     const newText = text.replace(pattern, 'const $1');
     return newText;
 }
+
+function removeConstKeyword(text: string): string {
+    const pattern = /const\s+(\w+(\.\w+)?\s*\()/;
+    const newText = text.replace(pattern, '$1');
+    return newText;
+}
+
+vscode.workspace.onDidSaveTextDocument(async (document: vscode.TextDocument) => {
+    if (document.languageId === 'dart') {
+        await optimizeDartCode();
+    }
+});
