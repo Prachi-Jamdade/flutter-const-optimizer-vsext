@@ -2,7 +2,7 @@
 
 ## 🚀 Why Use Flutter Const Optimizer?
 
-Flutter/Dart developers, rejoice! If you've ever felt like your Dart code could use a sprinkle of performance magic, this extension is for you. It automatically adds the `const` keyword to constructors and static methods where it’s missing.
+The extension automatically analyzes Flutter UI code and suggests adding the keyword where appropriate. It automatically adds the `const` keyword to constructors and static methods where it’s missing. 
 
 ### Benefits:
 - **Performance**: `const` objects are compile-time constants, which means they’re optimized at build time. Your app will thank you for the speed boost.
